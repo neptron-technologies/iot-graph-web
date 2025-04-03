@@ -9,4 +9,5 @@ namespace graphs.Repositories
     {
         public GraphsRepo(graphsDBContext context) : base(context) { }
     }
+
 }

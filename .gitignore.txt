@@ -1,0 +1,32 @@
+# **ASP.NET Core & C# Ignore List**
+
+# Ignore build output folders
+bin/
+obj/
+
+# Ignore Visual Studio specific files
+.vs/
+*.suo
+*.user
+*.cache
+*.csproj.user
+
+# Ignore log, database, and temp files
+*.log
+*.db
+*.sqlite
+*.mdf
+*.ldf
+logs/
+App_Data/
+
+# Ignore environment config files
+appsettings.Development.json
+secrets.json
+
+# Ignore Rider & VSCode settings (if applicable)
+.idea/
+.vscode/
+
+# Ignore package dependencies
+node_modules/

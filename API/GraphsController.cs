@@ -22,5 +22,12 @@ namespace graphs.API
             var graphs = await _graphsService.GetGraphsAsync();
             return Ok(graphs);
         }
+
+        [HttpGet("by-date-range")]
+        public async Task<ActionResult<IEnumerable<GraphsDTO>>> GetGraphsByDateRangeAsync(DateTime startDate, DateTime endDate)
+        {
+            var graphs = await _graphsService.GetGraphsByDateRangeAsync(startDate, endDate);
+            return Ok(graphs);
+        }
     }
 }
