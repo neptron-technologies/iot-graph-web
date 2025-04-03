@@ -1,7 +1,19 @@
-<!-- <div class="chart-container"> 
-  <svg></svg>
-  <div #chartContainer></div>
+<!-- Top controls container -->
+<div class="controls-container">
+  <div class="date-range">
+    <label for="startDate">Start Date:</label>
+    <input type="date" id="startDate" [(ngModel)]="startDate" (change)="onDateChange()" />
 
-</div> -->
+    <label for="endDate">End Date:</label>
+    <input type="date" id="endDate" [(ngModel)]="endDate" (change)="onDateChange()" />
 
+    <button class="fetch-btn" (click)="fetchData()">Fetch Data</button>
+  </div>
+
+  <button class="download-btn" (click)="downloadGraph()">Download Graph</button>
+</div>
+
+<!-- Chart and Legend Containers -->
+<div id="checkboxContainer"></div>
 <div #chartContainer></div>
+<div #legendContainer></div>
